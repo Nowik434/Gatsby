@@ -25,7 +25,7 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
-import bgImage from '../../public/assets/wind3.jpg';
+// import bgImage from '/assets/wind3.jpg';
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -199,7 +199,7 @@ const HomePage = ({ data }) => {
     <Layout>
       <Seo />
       <div className="bg-img-container" style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `url('./assets/wind3.jpg')`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
