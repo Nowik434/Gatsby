@@ -11,8 +11,8 @@ const MenuItems = [
     title: "Strona Główna",
   },
   {
-    path: "/about",
-    title: "O Nas",
+    path: "/offer",
+    title: "Oferta",
   },
   {
     path: "/blog",

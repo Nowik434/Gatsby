@@ -11,15 +11,17 @@
   min-height: calc(100vh - 60px - 81px);
 }
 
+.full-container {
+    padding-top: 150px !important;
+}
+
 .bg-img-container {
   width: 100%;
-  img {
-    height: 600px;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    z-index: -1;
-  }
+  height: 850px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .site-header {
@@ -28,6 +30,7 @@
   width: 100%;
   align-items: center;
   position: absolute;
+  top: 0;
   z-index: 10;
   padding: 6px 20px;
   background-image: linear-gradient(to top, rgba(29, 38, 47, 0), #1d262f);

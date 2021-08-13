@@ -43,7 +43,7 @@ const Layout = ({ children, className, props }) => {
           <Theme />
         </div>
       </Header>
-      <main className="full-container">{children}</main>
+      <main className="full-container container">{children}</main>
       <Footer />
     </div>
   )
