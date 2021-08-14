@@ -10,6 +10,7 @@ import "../assets/scss/style.scss"
 import Footer from "./footer"
 import Theme from "../components/theme"
 import Search from "../components/search"
+import "@fontsource/roboto"
 
 const query = graphql`
   query LayoutQuery {
@@ -44,6 +45,9 @@ const Layout = ({ children, className, props }) => {
         </div>
       </Header>
       <main className="full-container container">{children}</main>
+      {/* <div className="col">
+        <iframe width="100%" height="450" src="https://embed.windy.com/embed2.html?lat=51.188&lon=22.530&detailLat=25.493&detailLon=-90.945&width=650&height=450&zoom=11&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+      </div> */}
       <Footer />
     </div>
   )

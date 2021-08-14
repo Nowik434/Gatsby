@@ -57,7 +57,7 @@ const Pagination = props => (
             <span className="icon -left">
               <RiArrowLeftLine />
             </span>{" "}
-            Previous
+            Poprzednia
           </Link>
         </li>
       )}
@@ -74,7 +74,7 @@ const Pagination = props => (
       {!props.isLast && (
         <li>
           <Link to={props.nextPage} rel="next">
-            Next{" "}
+            Następna{" "}
             <span className="icon -right">
               <RiArrowRightLine />
             </span>

@@ -25,7 +25,6 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import Seo from "../components/seo"
 import Icons from "../util/socialmedia.json"
-// import bgImage from '/assets/wind3.jpg';
 
 export const pageQuery = graphql`
   query HomeQuery($id: String!) {
@@ -224,6 +223,7 @@ const HomePage = ({ data }) => {
             className="button"
             sx={{
               variant: "variants.button",
+              color: "#000",
             }}
           >
             {frontmatter.cta.ctaText}
@@ -253,6 +253,9 @@ const HomePage = ({ data }) => {
         </div>
       </div>
       <BlogListHome data={posts} />
+      <div className="col windy">
+        <iframe width="100%" height="450" src="https://embed.windy.com/embed2.html?lat=51.188&lon=22.530&detailLat=25.493&detailLon=-90.945&width=650&height=450&zoom=11&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+      </div>
     </Layout>
   )
 }

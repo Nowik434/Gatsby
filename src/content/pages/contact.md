@@ -1,9 +1,9 @@
 ---
 template: contact-page
 slug: /contact
-title: Get in touch
+title: Kontakt
 ---
 
-Got a burning question regarding **JAMstack**, Need a new **Website**, or just anything in general. We are happy to talk.
+Skontaktuj się z Surf Point Marina
 
-Just send us a message using the form below or you can send us a DM on [Twitter](https://twitter.com/stackrole)
+Możesz też napisać do nas na facebooku [Facebook](https://facebook.com/)
