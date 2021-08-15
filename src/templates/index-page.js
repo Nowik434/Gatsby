@@ -203,8 +203,8 @@ const HomePage = ({ data }) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
       }}></div>
-      <div className="container home-banner grids col-1 sm-2">
-        <div>
+      <div className="container home-banner grids sm-2">
+        <div className="col">
           <h1 className="title">{frontmatter.title}</h1>
           <p
             className="tagline"
@@ -240,7 +240,7 @@ const HomePage = ({ data }) => {
             {sIcons}
           </div>
         </div>
-        <div>
+        <div className="col">
           {Image ? (
             <GatsbyImage
               image={Image}

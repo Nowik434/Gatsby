@@ -14,14 +14,14 @@ export default function BlogListHome(props) {
 }
 
 const PostMaker = ({ data }) => (
-  <section className="home-posts">
+  <section className="home-posts container">
     <h2>
       Najnowsze wpisy{" "}
       <span className="icon -right">
         <RiArrowDownLine />
       </span>
     </h2>
-    <div className="grids col-1 sm-2 lg-3">{data}</div>
+    <div className="grids sm-2 lg-3">{data}</div>
     <Link
       className="button"
       to="/blog"

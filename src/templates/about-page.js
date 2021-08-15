@@ -14,6 +14,14 @@ export const pageQuery = graphql`
         title
       }
     }
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      excerpt(pruneLength: 140)
+      frontmatter {
+        title
+      }
+    }
   }
 `
 const AboutPage = ({ data }) => {
@@ -23,7 +31,7 @@ const AboutPage = ({ data }) => {
   return (
     <Layout className="page">
       <Seo title={frontmatter.title} description={excerpt} />
-      <div className="wrapper">
+      <div className="wrapper container-page">
         <h1>{frontmatter.title}</h1>
         <article dangerouslySetInnerHTML={{ __html: html }} />
       </div>

@@ -34,7 +34,7 @@ const Contact = ({ data }) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <div className="wrapper">
+      <div className="wrapper container-page">
         <h1>{frontmatter.title}</h1>
         <div
           className="description"
