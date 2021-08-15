@@ -7,6 +7,7 @@ const Footer = () => (
   <div sx={{
     bg: "siteColor",
     color: "#000",
+    "margin-top": "-8px"
   }}>
     <div class="container">
       <footer class="pt-5">
@@ -22,11 +23,8 @@ const Footer = () => (
           <div class="col-4 p-0">
             <h5>Kontakt</h5>
             <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              <li class="nav-item"><p className="mb-1">Telefon: 502 450 655</p></li>
+              <li class="nav-item"><p className="mb-1">Adres: Krężnicka 6, 20-518 Lublin</p></li>
             </ul>
           </div>
 

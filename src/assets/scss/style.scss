@@ -64,12 +64,14 @@
     color: #f2ee4f !important;
     font-weight: 400;
     text-decoration: none;
+    transition: .2s;
     &:hover {
-      color: rgba(255, 255, 255, 0.8);
+      color: #beba0e !important;
+      transition: .2s;
     }
   }
   a[aria-current="page"] {
-    color: rgba(255, 255, 255, 1);
+    color: #fff900 !important;
   }
   .menu-trigger {
     display: none;

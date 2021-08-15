@@ -14,14 +14,6 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 140)
-      frontmatter {
-        title
-      }
-    }
   }
 `
 const AboutPage = ({ data }) => {
