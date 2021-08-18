@@ -2,11 +2,6 @@
 @import "defaults";
 @import "lib/css-grid-utility";
 
-// .primary-container {
-// 	display: grid;
-// 	grid-template-rows: 60px auto 60px;
-// 	min-height: 100vh;
-// }
 .primary-container main {
   min-height: calc(100vh - 60px - 81px);
   font-family: "Roboto";
@@ -72,6 +67,7 @@
   }
   a[aria-current="page"] {
     color: #fff900 !important;
+    text-shadow: 2px 2px 5px #00000099;
   }
   .menu-trigger {
     display: none;
@@ -142,7 +138,7 @@
   }
 }
 .home-banner {
-  padding: 261px 0;
+  margin: 261px auto;
   align-items: center;
   .title {
     font-size: 48px;
@@ -168,6 +164,15 @@
     }
   }
 }
+
+.price {
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    box-shadow: 0 5px 10px #0000000d;
+    border-radius: 4px;
+    padding: 20px;
+}
+
 .social-icons {
   font-size: 35px;
   display: flex;

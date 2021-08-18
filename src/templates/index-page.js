@@ -203,55 +203,103 @@ const HomePage = ({ data }) => {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat'
       }}></div>
-      <div className="container home-banner grids sm-2">
-        <div className="col">
-          <h1 className="title">{frontmatter.title}</h1>
-          <p
-            className="tagline"
-            sx={{
-              color: "muted",
+      <div className="container home-banner">
+        <div className="row">
+          <div className="col-md-6">
+            <h1 sx={{
+              color: "siteColor",
+              textTransform: "uppercase",
+              letterSpacing: "4px",
             }}
-          >
-            {frontmatter.tagline}
-          </p>
-          <div
-            className="description"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-          <Link
-            to={frontmatter.cta.ctaLink}
-            className="button"
-            sx={{
-              variant: "variants.button",
-              color: "#000",
-            }}
-          >
-            {frontmatter.cta.ctaText}
-            <span className="icon -right">
-              <RiArrowRightSLine />
-            </span>
-          </Link>
-          <div
-            className="social-icons"
-            sx={{
-              variant: "variants.socialIcons",
-            }}
-          >
-            {sIcons}
+              className="title">{frontmatter.title}</h1>
+            <p
+              className="tagline"
+              sx={{
+                color: "muted",
+              }}
+            >
+              {frontmatter.tagline}
+            </p>
+            <div
+              className="description"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+            <Link
+              to={frontmatter.cta.ctaLink}
+              className="button"
+              sx={{
+                variant: "variants.button",
+                color: "#000",
+              }}
+            >
+              {frontmatter.cta.ctaText}
+              <span className="icon -right">
+                <RiArrowRightSLine />
+              </span>
+            </Link>
+            <div
+              className="social-icons"
+              sx={{
+                variant: "variants.socialIcons",
+              }}
+            >
+              {sIcons}
+            </div>
+          </div>
+          <div className="col-md-6">
+            {Image ? (
+              <GatsbyImage
+                image={Image}
+                alt={frontmatter.title + " - Featured image"}
+                className="featured-image"
+              />
+            ) : (
+                ""
+              )}
           </div>
         </div>
-        <div className="col">
-          {Image ? (
-            <GatsbyImage
-              image={Image}
-              alt={frontmatter.title + " - Featured image"}
-              className="featured-image"
-            />
-          ) : (
-              ""
-            )}
+      </div>
+      <div className="container">
+        <div className="row price">
+          <h1 className="text-center">CENNIK</h1>
+          <table class="table caption-top">
+            <caption></caption>
+            <thead>
+              <tr>
+                <th scope="col">Wypożyczenie sprzętu</th>
+                <th scope="col">1h</th>
+                <th scope="col">2h</th>
+                <th scope="col">3h</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Zestaw windsurfingowy</th>
+                <td>40 zł</td>
+                <td>70 zł</td>
+                <td>90 zł</td>
+              </tr>
+              <tr>
+                <th scope="row">SUP deska z wiosłem</th>
+                <td>20 zł</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Lekcje</th>
+                <td>80 zł</td>
+                <td>150 zł</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+
+
       <BlogListHome data={posts} />
       <div className="col windy">
         <iframe width="100%" height="450" src="https://embed.windy.com/embed2.html?lat=51.188&lon=22.530&detailLat=25.493&detailLon=-90.945&width=650&height=450&zoom=11&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>

@@ -41,8 +41,8 @@ const themeStyles = {
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "#fff",
-    mt: "10px",
+    color: "siteColor",
+    mt: "0px",
   },
   modeText: {
     fontSize: "16px",

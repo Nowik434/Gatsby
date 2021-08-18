@@ -46,8 +46,8 @@ export default class Search extends Component {
                   {page.template === "blog-post" ? (
                     <Link to={page.slug}>{page.title}</Link>
                   ) : (
-                    ""
-                  )}
+                      ""
+                    )}
                 </li>
               ))}
             </ul>
@@ -103,7 +103,7 @@ const searchStyle = {
         "0px 0px 50px 0px rgba(0,0,0,.1), 0px 0px 1px 1px rgba(0,0,0,.1)",
     },
     ".search-input": {
-      bg: "#fff",
+      bg: "siteColor",
       color: "#000",
       borderRadius: "0",
       boxShadow: "none",
@@ -111,7 +111,7 @@ const searchStyle = {
     },
     ".search": {
       cursor: "pointer",
-      color: "#fff",
+      color: "siteColor",
       display: "flex",
       justifyContent: "center",
       "&:hover, &:focus": {

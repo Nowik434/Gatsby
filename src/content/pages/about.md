@@ -6,7 +6,7 @@ title: Nasza Oferta
 
 Ludzie wody – to chyba najbardziej trafne określenie dla naszej ekipy. Kochamy wszelkie sporty wodne i atmosferę z nimi związaną, jednak w szczególności uwielbiamy windsurfing. Wiatr w żaglach napędza nas codziennie do działania. Chcemy zarazić was naszą pasją, tak byście poza sezonem nie zdążyli się z niej wyleczyć i w każde lato wracali do nas szlifować swoje umiejętności. Tym bardziej, że w Windresort wykupione godziny nie przepadają i możecie je nadrobić nawet rok później. W szkoleniu mamy ponad 10 lat doświadczenia, a nasze lekcje cechuje pozytywne motywowanie kursantów.
 
-![Toys](/assets/vanessa-bucceri-gdirwiyama8-unsplash.jpg "Toys")
+![Toys](/assets/sfp3.jpg "Toys")
 
 DOBRZE DOBRANY
 Baza EASY SURF Chałupy jest co roku wyposażana w najnowszy sprzęt topowych marek. Dzięki temu masz gwarancje dobrej jakości Twojej sesji i bezpieczeństwa na wodzie. Możesz w pełni skupić się na rozwoju swoich windsurfingowych umiejętności!

@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: Windsurfing Lublin
 tagline: Szkoła windsurfingu
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+featuredImage: /assets/sfp1.jpg
 cta:
   ctaText: Dowiedz się więcej
   ctaLink: /about
