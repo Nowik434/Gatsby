@@ -11,8 +11,8 @@ const Footer = () => (
   }}>
     <div class="container">
       <footer class="pt-5">
-        <div class="row">
-          <div class="col-4 p-0">
+        <div class="row pb-4">
+          <div class="col-md-4 col-sm-12 p-0">
             <div className="site-logo">
               <Link to="/">
                 <img src={'./assets/SPM2.png'} className="img-fluid" className="sfp-logo" alt="logo"></img>
@@ -20,16 +20,17 @@ const Footer = () => (
             </div>
           </div>
 
-          <div class="col-4 p-0">
-            <h5>Kontakt</h5>
+          <div class="col-md-4 col-sm-12 p-0">
+            <h3>Kontakt</h3>
             <ul class="nav flex-column">
-              <li class="nav-item"><p className="mb-1">Telefon: 502 450 655</p></li>
+              <li class="nav-item">Telefon: <a href="tel: 502 450 655" className="mb-1" sx={{ color: "#3cc5ec" }}>502 450 655</a></li>
+              <li class="nav-item">E-mail: <a href="mailto:surfpointmarina@gmail.com" sx={{ color: "#3cc5ec" }}>surfpointmarina@gmail.com</a></li>
               <li class="nav-item"><p className="mb-1">Adres: Krężnicka 6, 20-518 Lublin</p></li>
             </ul>
           </div>
 
-          <div class="col-4 p-0">
-            <h5>Godziny Pracy:</h5>
+          <div class="col-md-4 col-sm-12 p-0">
+            <h3>Godziny Pracy:</h3>
             <ul class="nav flex-column">
               <li class="nav-item"><p className="mb-1">poniedziałek:10:00–20:00</p></li>
               <li class="nav-item"><p className="mb-1">wtorek:10:00–20:00</p></li>
@@ -46,11 +47,6 @@ const Footer = () => (
           <p style={{ color: "#000", padding: "10px" }}>
             Coded by <Link style={{ color: "#3cc5ec" }} to="https://github.com/Nowik434">PN</Link>
           </p>
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"></svg></a></li>
-            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"></svg></a></li>
-          </ul>
         </div>
       </footer>
     </div>

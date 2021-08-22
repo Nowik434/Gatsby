@@ -93,10 +93,22 @@
       }
       .icon-menu-close {
         display: flex;
+        z-index: 2;
       }
     }
     .menu-trigger.is-active + ul {
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #3cc5ec;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      max-width: none;
+      text-align: center;
+      padding-top: 42%;
     }
     ul {
       display: none;
@@ -156,11 +168,26 @@
   }
   @media (max-width: $breakpoint-sm) {
     padding: 30px 0;
+    text-align: center;
+    margin: 100px auto;
     .title {
       font-size: 38px;
     }
     .tagline {
       margin-top: 3px;
+    }
+    .social-icons {
+      display: flex;
+      margin-top: 40px;
+      align-items: center;
+      justify-content: center;
+      svg{
+        height: 2em;
+        width: 2em;
+      }
+    }
+    .featured-image {
+      display: none;
     }
   }
 }
@@ -388,6 +415,18 @@ footer {
     img{
       width: 200px;
     }
+  }
+  @media (max-width: 770px){
+    .col-sm-12 {
+      text-align: center;
+    }
+    .d-flex {
+      display: block !important;
+      text-align: center;
+    }
+  }
+  .border-top {
+    border-top: 1px solid #3cc5ec !important;
   }
 }
 

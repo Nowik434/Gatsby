@@ -37,7 +37,7 @@ const Contact = ({ data }) => {
       <div className="wrapper container-page">
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-md-6 col-sm-12">
               <h1>SURF POINT MARINA</h1>
 
               <p>Adres: dsfdsfd 3,</p>
@@ -65,7 +65,7 @@ const Contact = ({ data }) => {
 
 
             </div>
-            <div className="col-6">
+            <div className="col-md-6 col-sm-12">
               <h1>{frontmatter.title}</h1>
               <div
                 className="description"

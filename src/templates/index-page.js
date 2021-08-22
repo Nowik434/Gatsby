@@ -204,7 +204,7 @@ const HomePage = ({ data }) => {
         backgroundRepeat: 'no-repeat'
       }}></div>
       <div className="container home-banner">
-        <div className="row">
+        <div className="row g-0">
           <div className="col-md-6">
             <h1 sx={{
               color: "siteColor",
