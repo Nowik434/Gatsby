@@ -227,5 +227,11 @@ collections:
             enableAlpha: true
             allowInput: true
 
-  - label: "Gallery"
-      name: "gall"
+  - label: Education
+    name: education
+    widget: list
+    collapsed: false
+    fields: 
+      - {label: Institution, name: institution, widget: string}
+      - {label: Year, name: year, widget: datetime, format: "YYYY-YYYY", dateFormat: "YYYY-YYYY", timeFormat: false}
+      - {label: Score, name: score, widget: number}
