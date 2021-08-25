@@ -229,6 +229,7 @@ collections:
 
   - label: Education
     name: education
+    file: src/content/pages/index.md
     widget: list
     collapsed: false
     fields: 
