@@ -228,24 +228,4 @@ collections:
             allowInput: true
 
   - label: "Gallery"
-      name: "gallery"
-      identifier_field: "gallery"
-      files:
-        - label: "Default Theme"
-          name: "themescolors"
-          file: "src/util/default-colors.json"
-          fields:
-            - label: "Primary Color"
-              name: "siteColor"
-              widget: "color"
-              enableAlpha: true
-              allowInput: true
-        - label: "Dark Theme"
-          name: "darkthemescolors"
-          file: "src/util/dark-theme-colors.json"
-          fields:
-            - label: "Primary Color"
-              name: "siteColor"
-              widget: "color"
-              enableAlpha: true
-              allowInput: true
+      name: "gall"
