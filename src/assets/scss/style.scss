@@ -25,6 +25,20 @@
   margin: 142px auto 0px auto;
   max-width: 1240px;
   padding: 0 20px;
+  .feature {
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 10px #0000000d;
+    border-radius: 4px;
+    transition: box-shadow 0.3s linear;
+    background-color: #3cc5ec2e;
+  }
+}
+
+#featured-3 {
+  .row {
+    grid-gap: 40px;
+  }
 }
 
 .site-header {
@@ -319,6 +333,7 @@ article img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 40%;
   }
 }
 // Buttons
@@ -427,6 +442,9 @@ footer {
   }
   .border-top {
     border-top: 1px solid #3cc5ec !important;
+  }
+  .open-time {
+    font-size: 15px;
   }
 }
 

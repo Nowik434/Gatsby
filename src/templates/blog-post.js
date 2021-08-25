@@ -12,7 +12,9 @@ const styles = {
     "background-color": "cardBg",
   },
   pagination: {
+    "justify-content": "center",
     a: {
+      width: "400px",
       color: "muted",
       "&.is-active": {
         color: "text",

@@ -35,7 +35,7 @@ export default class Search extends Component {
           <div sx={searchStyle.search} className="search-container">
             <input
               type="text"
-              placeholder="Search"
+              placeholder="Wyszukaj"
               value={this.state.query}
               onChange={this.search}
               className="search-input"
