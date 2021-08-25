@@ -228,19 +228,11 @@ collections:
             allowInput: true
 
 - label: "Gallery"
-    name: "gallery"
-    identifier_field: "name"
-    fields:
-    - label: 'Cover Image'
-      name: 'image'
-      widget: 'image'
-      required: false
-      tagname: ''
-      media_library:
-        config:
-          default_transformations:
-            - fetch_format: auto
-              width: 300    
-              quality: auto
-              crop: fill
-              effect: grayscale
+  name: "galleryImages"
+  widget: "list"
+  fields:
+    - { label: "Source", name: "src", widget: "string" }
+    - { label: "Alt Text", name: "alt", widget: "string" }
+  default:
+    - { src: "/img/tenis.jpg", alt: "Tenis" }
+    - { src: "/img/footbar.jpg", alt: "Football" }
