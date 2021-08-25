@@ -228,11 +228,24 @@ collections:
             allowInput: true
 
 - label: "Gallery"
-  name: "galleryImages"
-  widget: "list"
-  fields:
-    - { label: "Source", name: "src", widget: "string" }
-    - { label: "Alt Text", name: "alt", widget: "string" }
-  default:
-    - { src: "/img/tenis.jpg", alt: "Tenis" }
-    - { src: "/img/footbar.jpg", alt: "Football" }
+    name: "gallery"
+    identifier_field: "gallery"
+    files:
+      - label: "Default Theme"
+        name: "themescolors"
+        file: "src/util/default-colors.json"
+        fields:
+          - label: "Primary Color"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+      - label: "Dark Theme"
+        name: "darkthemescolors"
+        file: "src/util/dark-theme-colors.json"
+        fields:
+          - label: "Primary Color"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
