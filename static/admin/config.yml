@@ -229,12 +229,16 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    folder: "_posts"
+    folder: "_gallery"
     media_folder: "content/gallery"
     widget: "list"
     fields:
-      - { label: "Source", name: "src", widget: "string" }
-      - { label: "Alt Text", name: "alt", widget: "string" }
+      - label: "Source"
+        name: "src"
+        widget: "string"
+      - label: "Alt Text"
+        name: "alt"
+        widget: "string"
     default:
       - { src: "/img/tenis.jpg", alt: "Tenis" }
       - { src: "/img/footbar.jpg", alt: "Football" }
