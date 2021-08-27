@@ -227,7 +227,12 @@ collections:
             enableAlpha: true
             allowInput: true
 
-  - label: "Education"
-    name: "education"
-    file: "src/content/pages/index.md"
+  - label: "Gallery"
+    name: "galleryImages"
     widget: "list"
+    fields:
+      - { label: "Source", name: "src", widget: "string" }
+      - { label: "Alt Text", name: "alt", widget: "string" }
+    default:
+      - { src: "/img/tenis.jpg", alt: "Tenis" }
+      - { src: "/img/footbar.jpg", alt: "Football" }
