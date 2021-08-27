@@ -229,6 +229,8 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
+    folder: "_posts"
+    media_folder: "content/gallery"
     widget: "list"
     fields:
       - { label: "Source", name: "src", widget: "string" }
