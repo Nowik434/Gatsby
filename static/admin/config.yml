@@ -234,12 +234,11 @@ collections:
     media_folder: "content/gallery"
     widget: "list"
     fields:
-      - label: "Source"
-        name: "src"
-        widget: "string"
-      - label: "Alt Text"
-        name: "alt"
-        widget: "string"
-    default:
-      - { src: "/img/tenis.jpg", alt: "Tenis" }
-      - { src: "/img/footbar.jpg", alt: "Football" }
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
