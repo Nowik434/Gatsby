@@ -234,6 +234,15 @@ collections:
     media_folder: "content/gallery"
     widget: "list"
     fields:
+      - label: "Dark Theme"
+        name: "darkthemescolors"
+        file: "src/util/dark-theme-colors.json"
+        fields:
+          - label: "Primary Color"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
       - label: "Featured Image"
         name: "thumbnail"
         widget: "image"
