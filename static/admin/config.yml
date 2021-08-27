@@ -235,20 +235,10 @@ collections:
     media_folder: "content/gallery"
     widget: "list"
     fields:
-      - label: "Dark Theme"
-        name: "darkthemescolors"
-        file: "src/util/dark-theme-colors.json"
+      - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+      - label: Author
+        name: author
+        widget: object
         fields:
-          - label: "Primary Color"
-            name: "siteColor"
-            widget: "color"
-            enableAlpha: true
-            allowInput: true
-      - label: "Featured Image"
-        name: "thumbnail"
-        widget: "image"
-        choose_url: true
-        default: "/uploads/chocolate-dogecoin.jpg"
-        media_library:
-          config:
-            multiple: true
+          - {label: Name, name: name, widget: string, default: "Emmet"}
+          - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
