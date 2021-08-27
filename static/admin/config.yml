@@ -229,10 +229,8 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    identifier_field: "gallery"
     file: "src/content/pages/gallery.md"
     folder: "content/gallery"
-    media_folder: "content/gallery"
     widget: "list"
     fields:
       - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
