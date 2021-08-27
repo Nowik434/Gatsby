@@ -234,5 +234,21 @@ collections:
     folder: "content/gallery"
     media_folder: "content/gallery"
     widget: "list"
-    summary: '{{fields.image}}'
-    field: {label: Image, name: image, widget: image}
+    fields:
+      - label: "Dark Theme"
+        name: "darkthemescolors"
+        file: "src/util/dark-theme-colors.json"
+        fields:
+          - label: "Primary Color"
+            name: "siteColor"
+            widget: "color"
+            enableAlpha: true
+            allowInput: true
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        default: "/uploads/chocolate-dogecoin.jpg"
+        media_library:
+          config:
+            multiple: true
