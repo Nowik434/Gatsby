@@ -229,9 +229,7 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    file: "src/content/pages/gallery.md"
-    folder: "content/gallery"
-    media_folder: "content/gallery"
+    identifier_field: "gallery"
     widget: "list"
     fields:
       - label: "Dark Theme"
