@@ -236,7 +236,7 @@ collections:
     widget: "list"
     fields:
       - label: "Primary Color"
-            name: "siteColor"
-            widget: "color"
-            enableAlpha: true
-            allowInput: true
+        name: "siteColor"
+        widget: "color"
+        enableAlpha: true
+        allowInput: true
