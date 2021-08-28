@@ -231,7 +231,7 @@ collections:
     name: "galleryImages"
     widget: "list"
     summary: '{{fields.image}}'
-    folder: "content/gallery"
+    folder: "src/content/gallery"
     fields: 
       - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
       - label: Author
