@@ -229,14 +229,6 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    file: "src/content/pages/gallery.md"
-    folder: "content/gallery"
-    media_folder: "static/assets"
-    public_folder: "content/gallery"
     widget: "list"
-    fields:
-      - label: "Primary Color"
-        name: "siteColor"
-        widget: "color"
-        enableAlpha: true
-        allowInput: true
+    summary: '{{fields.image}}'
+    field: {label: Image, name: image, widget: image}
