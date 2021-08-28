@@ -231,7 +231,6 @@ collections:
     name: "galleryImages"
     widget: "list"
     summary: '{{fields.image}}'
-    file: "src/content/pages/gallery.md"
     folder: "content/gallery"
     fields: 
       - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
