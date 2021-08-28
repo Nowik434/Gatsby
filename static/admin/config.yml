@@ -231,4 +231,8 @@ collections:
     name: "galleryImages"
     widget: "list"
     summary: '{{fields.image}}'
-    field: {label: Image, name: image, widget: image}
+    file: "src/content/pages/gallery.md"
+    folder: "content/gallery"
+    fields: 
+      - {label: Image, name: image, widget: image}
+      - {label: Image, name: image2, widget: image}
