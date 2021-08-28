@@ -230,13 +230,15 @@ collections:
   - label: "Gallery"
     name: "galleryImages"
     widget: "list"
+    file: "src/content/pages/gallery.md"
     summary: '{{fields.image}}'
     folder: "src/content/gallery"
-    fields: 
-      - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-      - label: Author
-        name: author
-        widget: object
-        fields:
-          - {label: Name, name: name, widget: string, default: "Emmet"}
-          - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+    fields:
+      - label: Cover Image
+        name: cover
+        widget: image
+        media_library:
+          name: uploadcare
+          config:
+            publickey: 5358e51286c39e427eda
+            
