@@ -235,8 +235,6 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    widget: "list"
-    file: "src/content/pages/gallery.md"
     fields:
       - label: 'Cover Image'
         name: 'image'
