@@ -242,11 +242,7 @@ collections:
         name: cover
         widget: image
         media_library:
-          options:
-            name: uploadcare
-            config:
-              publickey: 5358e51286c39e427eda
-            settings:
-              autoFilename: true
-              defaultOperations: '/resize/800x600/'
-            
+          config:
+            multiple: true
+            previewStep: false
+                
