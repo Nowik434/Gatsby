@@ -91,6 +91,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
         trackingId: settings.ga,
       },
     },
@@ -108,11 +109,5 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      }
-    }
   ],
 }
