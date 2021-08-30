@@ -13,6 +13,10 @@ local_backend: true # run npx netlify-cms-proxy-server for local testing
 
 media_folder: "static/assets"
 public_folder: "/assets"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 5358e51286c39e427eda
 
 collections:
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
