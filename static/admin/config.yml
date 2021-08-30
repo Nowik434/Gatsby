@@ -235,10 +235,7 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    widget: "list"
-    file: "src/content/pages/gallery.md"
-    summary: '{{fields.image}}'
-    folder: "src/content/gallery"
+    widget: 'markdown'
     fields:
       - label: 'Cover Image'
         name: 'image'
