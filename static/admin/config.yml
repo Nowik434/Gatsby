@@ -12,12 +12,12 @@ backend:
 local_backend: true # run npx netlify-cms-proxy-server for local testing
 
 media_folder: "static/assets"
+public_folder: "/assets"
 media_library:
   name: cloudinary
   config:
-    cloud_name: Nowik434
+    cloud_name: zdj
     api_key: 644924495427385
-public_folder: "/assets"
 
 
 collections:
