@@ -13,9 +13,10 @@ local_backend: true # run npx netlify-cms-proxy-server for local testing
 
 media_folder: "static/assets"
 media_library:
-  name: uploadcare
+  name: cloudinary
   config:
-    publicKey: "5358e51286c39e427eda"
+    cloud_name: Nowik434
+    api_key: 644924495427385
 public_folder: "/assets"
 
 
@@ -239,11 +240,17 @@ collections:
     summary: '{{fields.image}}'
     folder: "src/content/gallery"
     fields:
-      - label: Cover Image
-        name: cover
-        widget: image
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
         media_library:
           config:
-            multiple: true
-            previewStep: false
+            default_transformations:
+              - fetch_format: auto
+                width: 300    
+                quality: auto
+                crop: fill
+                effect: grayscale
                 
