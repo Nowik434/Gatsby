@@ -13,12 +13,6 @@ local_backend: true # run npx netlify-cms-proxy-server for local testing
 
 media_folder: "static/assets"
 public_folder: "/assets"
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: dvkb7x01t
-    api_key: 644924495427385
-
 
 collections:
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -235,22 +229,6 @@ collections:
 
   - label: "Gallery"
     name: "galleryImages"
-    widget: 'markdown'
-    file: "src/content/pages/gallery.md"
+    widget: "list"
     summary: '{{fields.image}}'
-    folder: "src/content/gallery"
-    fields:
-      - label: 'Cover Image'
-        name: 'image'
-        widget: 'image'
-        required: false
-        tagname: ''
-        media_library:
-          config:
-            default_transformations:
-              - fetch_format: auto
-                width: 300    
-                quality: auto
-                crop: fill
-                effect: grayscale
-                
+    field: {label: Image, name: image, widget: image}

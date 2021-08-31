@@ -87,12 +87,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-      }
-    },
+    'gatsby-plugin-netlify-cms',
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
