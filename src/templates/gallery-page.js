@@ -8,26 +8,17 @@ import Seo from "../components/seo"
 
 
 const GalleryPage = () => {
-  export const galleryQuery = graphql`
-  query BlogPostQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 148)
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
-        title
-        description
-        featuredImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-      }
-    }
-  }
-`
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     file(relativePath: { eq: "./assets/SPM2.png" }) {
+  //       childImageSharp {
+  //         fixed {
+  //           ...GatsbyImageSharpFixed
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   // console.log(data)
   // const { markdownRemark, posts } = data // data.markdownRemark holds your post data
@@ -65,3 +56,25 @@ const GalleryPage = () => {
 }
 
 export default GalleryPage
+
+
+export const galleryQuery = graphql`
+  query GalleryQuery($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      excerpt(pruneLength: 148)
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        slug
+        title
+        description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+      }
+    }
+  }
+`
