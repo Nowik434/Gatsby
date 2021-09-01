@@ -8,17 +8,26 @@ import Seo from "../components/seo"
 
 
 const GalleryPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     file(relativePath: { eq: "./assets/SPM2.png" }) {
-  //       childImageSharp {
-  //         fixed {
-  //           ...GatsbyImageSharpFixed
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+  export const galleryQuery = graphql`
+  query BlogPostQuery($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      excerpt(pruneLength: 148)
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        slug
+        title
+        description
+        featuredImage {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
+      }
+    }
+  }
+`
 
   // console.log(data)
   // const { markdownRemark, posts } = data // data.markdownRemark holds your post data

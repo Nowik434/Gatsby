@@ -233,7 +233,7 @@ collections:
     files:
       - label: "Add to gallery"
         name: "addtogallery"
-        file: "src/content/pages/gallery.md"
+        file: "src/templates/gallery-page.js"
         fields:
           - label: "Gallery"
             name: "galleryImages"
