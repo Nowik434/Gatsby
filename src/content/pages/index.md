@@ -1,9 +1,9 @@
 ---
 template: index-page
 slug: /
-title: Windsurfing Lublin
+title: SURFMARINA LUBLIN
 tagline: Szkoła windsurfingu
-featuredImage: /assets/sfp1.jpg
+featuredImage: /assets/playa3.jpg
 cta:
   ctaText: Dowiedz się więcej
   ctaLink: /about
