@@ -8,5 +8,4 @@ cta:
   ctaText: Dowiedz się więcej
   ctaLink: /about
 ---
-
-Szkoła windsurfingu i wypożyczalnia sprzętu windsurfingowego oraz desek typu SUP nad zalewem zemborzyckim w Lublinie
+Szkoła windsurfingu i wypożyczalnia sprzętu windsurfingowego oraz desek typu SUP nad zalewem Zemborzyckim w Lublinie
