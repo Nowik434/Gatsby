@@ -226,17 +226,3 @@ collections:
             widget: "color"
             enableAlpha: true
             allowInput: true
-
-  - label: "Gallery"
-    name: "gallery"
-    identifier_field: "name"
-    files:
-      - label: "Add to gallery"
-        name: "addtogallery"
-        file: "src/templates/gallery-page.js"
-        fields:
-          - label: "Gallery"
-            name: "galleryImages"
-            widget: "list"
-            summary: '{{fields.image}}'
-            field: {label: Image, name: image, widget: image}
