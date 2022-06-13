@@ -40,30 +40,31 @@ const Contact = ({ data }) => {
             <div className="col-md-6 col-sm-12">
               <h1>SURF POINT MARINA</h1>
 
-              <p>Adres: dsfdsfd 3,</p>
-              <p>84-120 Lublin</p>
-              <p>Tel: +48 000 000 000</p>
+              <p>Adres: Krężnicka 6</p>
+              <p>20-518 Lublin</p>
+              <p>Tel: +48 502 450 655</p>
 
               <p>Otwarte: 1 maj - 15 wrzesień</p>
               <p>Godz: 09:00 - 19:00</p>
-              <p>Mail: aaa@eaaa.com</p>
+              <p>Mail: biuro@surfmarina.pl</p>
               <p>Konto do wpłat: Mbank 0000 0000 00000 0000 0000</p>
-              <p>WAŻNE: w tytule przelewu proszę wpisać tylko "Rezerwacja + imię i nazwisko"</p>
+              <p>
+                WAŻNE: w tytule przelewu proszę wpisać tylko "Rezerwacja + imię
+                i nazwisko"
+              </p>
               <b></b>
 
               <h3>INSTRUKTOR</h3>
-              <p>Jan Kowalski</p>
-              <p>Tel: +48 323 323 323</p>
-              <p>Mail: aaa@eaaa.com</p>
+              <p>Tomek</p>
+              <p>Tel: +48 502 450 655</p>
+              <p>Mail: biuro@surfmarina.pl</p>
               <b></b>
 
               <h3>NASZE DANE REJESTROWE</h3>
               <p>SURF POINT MARINA</p>
-              <p>ul. Akacjdsf 7/2, 62-070 Lublin</p>
-              <p>NIP: 000000000</p>
-              <p>REGON: 0000000</p>
-
-
+              <p>ul. Krężnicka 6, 20-518 Lublin</p>
+              <p>NIP: </p>
+              <p>REGON: </p>
             </div>
             <div className="col-md-6 col-sm-12">
               <h1>{frontmatter.title}</h1>
@@ -83,19 +84,19 @@ const Contact = ({ data }) => {
                 <p>
                   <label>
                     Imię
-              <input type="text" name="name" required />
+                    <input type="text" name="name" required />
                   </label>
                 </p>
                 <p>
                   <label>
                     Adres e-mail
-              <input type="email" name="email" required />
+                    <input type="email" name="email" required />
                   </label>
                 </p>
                 <p>
                   <label>
                     Temat
-              <input type="text" name="subject" required />
+                    <input type="text" name="subject" required />
                   </label>
                 </p>
                 <p>
