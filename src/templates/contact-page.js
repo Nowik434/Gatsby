@@ -47,11 +47,6 @@ const Contact = ({ data }) => {
               <p>Otwarte: 1 maj - 15 wrzesień</p>
               <p>Godz: 09:00 - 19:00</p>
               <p>Mail: biuro@surfmarina.pl</p>
-              <p>Konto do wpłat: Mbank 0000 0000 00000 0000 0000</p>
-              <p>
-                WAŻNE: w tytule przelewu proszę wpisać tylko "Rezerwacja + imię
-                i nazwisko"
-              </p>
               <b></b>
 
               <h3>INSTRUKTOR</h3>
