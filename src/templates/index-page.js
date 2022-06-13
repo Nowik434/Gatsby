@@ -84,134 +84,141 @@ const HomePage = ({ data }) => {
             <RiFacebookBoxFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "twitter" ? (
           <Link to={icons.url} target="_blank">
             <RiTwitterFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "linkedin" ? (
           <Link to={icons.url} target="_blank">
             <RiLinkedinBoxFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "youtube" ? (
           <Link to={icons.url} target="_blank">
             <RiYoutubeFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "instagram" ? (
           <Link to={icons.url} target="_blank">
             <RiInstagramFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "rss" ? (
           <Link to={icons.url} target="_blank">
             <RiRssFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "github" ? (
           <Link to={icons.url} target="_blank">
             <RiGithubFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "telegram" ? (
           <Link to={icons.url} target="_blank">
             <RiTelegramFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "pinterest" ? (
           <Link to={icons.url} target="_blank">
             <RiPinterestFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "snapchat" ? (
           <Link to={icons.url} target="_blank">
             <RiSnapchatFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "skype" ? (
           <Link to={icons.url} target="_blank">
             <RiSkypeFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "wordpress" ? (
           <Link to={icons.url} target="_blank">
             <FaWordpress />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "dribbble" ? (
           <Link to={icons.url} target="_blank">
             <RiDribbbleFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "medium" ? (
           <Link to={icons.url} target="_blank">
             <RiMediumFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "behance" ? (
           <Link to={icons.url} target="_blank">
             <RiBehanceFill />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
         {icons.icon === "vk" ? (
           <Link to={icons.url} target="_blank">
             <FaVk />
           </Link>
         ) : (
-            ""
-          )}
+          ""
+        )}
       </div>
     )
   })
   return (
     <Layout>
       <Seo />
-      <div className="bg-img-container" style={{
-        backgroundImage: `url('./assets/wind3.jpg')`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
-      }}></div>
+      <div
+        className="bg-img-container"
+        style={{
+          backgroundImage: `url('./assets/wind3.jpg')`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
       <div className="container home-banner">
         <div className="row g-0">
           <div className="col-md-6">
-            <h1 sx={{
-              color: "siteColor",
-              textTransform: "uppercase",
-              letterSpacing: "4px",
-            }}
-              className="title">{frontmatter.title}</h1>
+            <h1
+              sx={{
+                color: "siteColor",
+                textTransform: "uppercase",
+                letterSpacing: "4px",
+              }}
+              className="title"
+            >
+              {frontmatter.title}
+            </h1>
             <p
               className="tagline"
               sx={{
@@ -254,8 +261,8 @@ const HomePage = ({ data }) => {
                 className="featured-image"
               />
             ) : (
-                ""
-              )}
+              ""
+            )}
           </div>
         </div>
       </div>
@@ -275,21 +282,48 @@ const HomePage = ({ data }) => {
             <tbody>
               <tr>
                 <th scope="row">Zestaw windsurfingowy</th>
-                <td>40 zł</td>
-                <td>70 zł</td>
+                <td>50 zł</td>
                 <td>90 zł</td>
+                <td>120 zł</td>
               </tr>
               <tr>
                 <th scope="row">SUP deska z wiosłem</th>
-                <td>20 zł</td>
+                <td>25 zł</td>
                 <td></td>
                 <td></td>
               </tr>
               <tr>
                 <th scope="row">Lekcje</th>
-                <td>80 zł</td>
-                <td>150 zł</td>
+                <td>90 zł</td>
+                <td>160 zł</td>
                 <td></td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table caption-top">
+            <caption></caption>
+            <thead>
+              <tr>
+                <th scope="col">Kursy</th>
+                <th scope="col">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Kurs weekendowy 3 dni 12 h</th>
+                <td>350 zł</td>
+              </tr>
+              <tr>
+                <th scope="row">Kurs tygodniowy 6 dni 24 h</th>
+                <td>600 zł</td>
+              </tr>
+              <tr>
+                <th scope="row">Karnet week 7 dni 10 h</th>
+                <td>400 zł</td>
+              </tr>
+              <tr>
+                <th scope="row">Karnet 30 dni 20 h</th>
+                <td>700 zł</td>
               </tr>
             </tbody>
           </table>
@@ -299,10 +333,14 @@ const HomePage = ({ data }) => {
       <br />
       <br />
 
-
       <BlogListHome data={posts} />
       <div className="col windy">
-        <iframe width="100%" height="450" src="https://embed.windy.com/embed2.html?lat=51.188&lon=22.530&detailLat=25.493&detailLon=-90.945&width=650&height=450&zoom=11&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+        <iframe
+          width="100%"
+          height="450"
+          src="https://embed.windy.com/embed2.html?lat=51.188&lon=22.530&detailLat=25.493&detailLon=-90.945&width=650&height=450&zoom=11&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1"
+          frameborder="0"
+        ></iframe>
       </div>
     </Layout>
   )
