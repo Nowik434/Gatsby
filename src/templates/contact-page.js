@@ -46,7 +46,7 @@ const Contact = ({ data }) => {
 
               <p>Otwarte: 1 maj - 15 wrzesień</p>
               <p>Godz: 09:00 - 19:00</p>
-              <p>Mail: biuro@surfmarina.pl</p>
+              <p>Mail: tmietlicki@poczta.onet.pl</p>
               <b></b>
 
               <h3>INSTRUKTOR</h3>
