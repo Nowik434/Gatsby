@@ -52,7 +52,7 @@ const Contact = ({ data }) => {
               <h3>INSTRUKTOR</h3>
               <p>Tomek</p>
               <p>Tel: +48 502 450 655</p>
-              <p>Mail: biuro@surfmarina.pl</p>
+              <p>Mail: tmietlicki@poczta.onet.pl</p>
               <b></b>
 
               <h3>NASZE DANE REJESTROWE</h3>
