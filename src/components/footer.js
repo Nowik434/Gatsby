@@ -54,35 +54,6 @@ const Footer = () => (
               </li>
             </ul>
           </div>
-
-          <div class="col-md-4 col-sm-12 p-0">
-            <h3>Godziny Pracy:</h3>
-            <ul class="nav flex-column">
-              <li>
-                <p className="mb-1 nav-item open-time">
-                  poniedziałek:10:00–20:00
-                </p>
-              </li>
-              <li>
-                <p className="mb-1 nav-item open-time">wtorek:10:00–20:00</p>
-              </li>
-              <li>
-                <p className="mb-1 nav-item open-time">środa:10:00–20:00</p>
-              </li>
-              <li>
-                <p className="mb-1 nav-item open-time">czwartek:10:00–20:00</p>
-              </li>
-              <li>
-                <p className="mb-1 nav-item open-time">piątek:10:00–20:00</p>
-              </li>
-              <li>
-                <p className="mb-1 nav-item open-time">sobota:10:00–20:00</p>
-              </li>
-              <li>
-                <p className="mb-1 nav-item open-time">niedziela:10:00–20:00</p>
-              </li>
-            </ul>
-          </div>
         </div>
 
         <div class="d-flex justify-content-center pt-4 border-top">
